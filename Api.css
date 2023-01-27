@@ -1,0 +1,25 @@
+@media( max-width: 500px){
+header {
+  background-color: rgb(116, 6, 6);
+  color: wheat;
+  display: flex;
+  justify-content: space-between;
+  
+}
+h3 {
+    width: 80%
+    display: 
+}
+ul {
+    list-style-type: none;
+    display: flex;
+
+}
+li{
+    margin: 2vh;
+}
+}
+
+@media (max-width: 1024px) {
+    
+}
