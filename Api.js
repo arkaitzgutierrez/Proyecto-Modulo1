@@ -10,3 +10,4 @@ fetch('https://youtube-music1.p.rapidapi.com/v2/search?query=bryan%20adams', opt
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+    
