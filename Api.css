@@ -1,25 +1,60 @@
-@media( max-width: 500px){
-header {
-  background-color: rgb(116, 6, 6);
-  color: wheat;
-  display: flex;
-  justify-content: space-between;
-  
-}
-h3 {
-    width: 80%
-    display: 
-}
-ul {
-    list-style-type: none;
+@media (max-width: 500px) {
+  header {
+    background-color: rgb(116, 6, 6);
+    color: wheat;
     display: flex;
-
-}
-li{
+    justify-content: space-around;
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+    font-family: "Pacifico", cursive;
+    font-style: oblique;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
     margin: 2vh;
-}
+    padding: 1vh;
+    border-color: black;
+    border-style: dashed;
+    background-color: rgb(119, 119, 18);
+  }
+  /* main {
+    height: 80%; */
+    
+  }
+  #busq {
+    background-image: url("https://concepto.de/wp-content/uploads/2020/03/musica-e1584123203510-800x400.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+  }
+  #etiqBus{
+    width: 20%;
+  }
+  #fotos{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .todas{
+    width:200px;
+    margin: 1vh;
+  }
+  h2 {
+    color: wheat;
+    font-family: "Pacifico", cursive ;
+    font-weight: 200;
+    font-weight: 200;
+  }
+span{
+    color: rgb(117, 18, 18);
 }
 
 @media (max-width: 1024px) {
-    
 }
