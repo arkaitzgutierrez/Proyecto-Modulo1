@@ -59,6 +59,24 @@ span{
 display: flex;
 margin: 1vh;
 }
+#peticionehistorial{
+    display: flex;
+
+}
+.tabla{
+    margin: 1vh;
+background-color: white;
+
+border-color: black;
+width: 100%;
+min-height: 300px;
+}
+.uno{
+    border-style: dotted;
+}
+.dos{
+    border-style: double;
+}
 
 @media (max-width: 1024px) {
 }

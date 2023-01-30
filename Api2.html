@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Api.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Api.css" />
     <title>Document</title>
-</head>
-<body>
-    <header>https://elportaldemusica.es/</header>
+  </head>
+  <body>
+    <header>
+      <h3>Logo Javi & Arkaitz Music....</h3>
+      <ul>
+        <li>Búsqueda</li>
+        <li>Resultado</li>
+      </ul>
+    </header>
     <main>
-        <div>
-    <div id="Resultados">
-<select name="" id="Opciones">
-    <option selected disabled>Elige una opción</option>
-        <option value="duration">Duracion del vídeo</option>
-        <option value="title"> Título de la canción</option>
-        <option value="id">Reproducir vídeo</option>
-
-</select>
+      <div id="busq">
+        <h2>La <span>musica</span> está en tus manos</h2>
+        <input
+          type="text"
+          name=""
+          id="etiqBus"
+          placeholder="busqueda"
+          value=""
+        />
+      </div>
+      <div>
+        <div id="Resultados">
+          <select>
+            <option selected disabled>Elige una opción</option>
+          </select>
         </div>
+      </div>
+      <div id="peticionehistorial">
+        <div class="tabla uno">
+          <h3>Tu peticion</h3>
+        </div>
+        <div class="tabla dos">
+          <h3>Tu historial</h3>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer>Page:<span id="page"></span></footer>
 
     <script src="Api.js"></script>
-</body>
+  </body>
 </html>
