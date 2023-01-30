@@ -28,31 +28,31 @@
     <main>
       <div id="busq">
         <h2>La <span>musica</span> está en tus manos</h2>
-        <h3>Escoge tu artista favorito</h3>
         <input
           type="text"
           name=""
           id="etiqBus"
           placeholder="busqueda"
+          value=""
         />
       </div>
-      <select>
-        <option selected disabled>Elige una opción</option>
-            
-           
-    
-    </select>
-    <div id= peticionehistorial>
-      <div class="">
-        <h3>Tu petición</h3>
+      <div>
+        <div id="Resultados">
+          <select>
+            <option selected disabled>Elige una opción</option>
+          </select>
+        </div>
       </div>
-      <div id="Tu_historial">
-        <h3>Tu historial</h3>
+      <div id="peticionehistorial">
+        <div class="tabla uno">
+          <h3>Tu peticion</h3>
+        </div>
+        <div class="tabla dos">
+          <h3>Tu historial</h3>
+        </div>
       </div>
-    </div>
     </main>
-    <footer>https://elportaldemusica.es/
-      Page:<span id="page"></span></footer>
+    <footer>Page:<span id="page"></span></footer>
 
     <script src="Api.js"></script>
   </body>
