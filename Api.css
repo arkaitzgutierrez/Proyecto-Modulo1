@@ -55,6 +55,10 @@
 span{
     color: rgb(117, 18, 18);
 }
+#paginacion{
+display: flex;
+margin: 1vh;
+}
 
 @media (max-width: 1024px) {
 }
