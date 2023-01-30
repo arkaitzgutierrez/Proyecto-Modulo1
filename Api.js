@@ -29,20 +29,19 @@ function datosArtista(peticionAYoutube) {
             .then(response => response.json())
             .then(response => {
                 console.log(response)
-                for (let i = 0; i < response.refinements.length; i++) {
-                    let videos = response.refinements[i].q;
+                for (let i = 0; i < response.items.length; i++) {
+                    let videos = response.items[i].title;
             
                     document.querySelector("select").innerHTML += `
-                    <option>${response.refinements[i].q}</option>
+                    <option>${response.items[i].title}</option>
                         `;
                 }
-                document.querySelector("select").innerHTML += `
-                // <a href="./Api2.html" target="_blank">Opcion</a>`
+                
             })
             
     
    
-    .catch(err => console.error(err));
+    //.catch(err => console.error(err));
     // datosArtista(url);
     // window.location.href="./Api2.html";
     
