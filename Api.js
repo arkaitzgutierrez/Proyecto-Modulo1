@@ -100,21 +100,6 @@ function datosArtista(peticionAYoutube) {
         .catch((err) => console.error(err));
 
 }
-<<<<<<< HEAD
-/*
-document.querySelector("select").addEventListener("change", function () {
-  let data = this.value.split(" | ");
-  let direccion = data[0];
-  let cancion = data[1];
-  let link = data[2];
-=======
-
-// document.querySelector("select").addEventListener("change", function () {
-//   let data = this.value.split(" | ");
-//   let direccion = data[0];
-//   let cancion = data[1];
-//   let link = data[2];
->>>>>>> 52ebb284b2ad6f589ffcbdb2fec3c3036c1dc823
 
 //   document.querySelector("#Pepe").innerHTML = "";
 //   document.querySelector("#Pepe").innerHTML += `
@@ -165,11 +150,8 @@ function variasfotos(nuestras) {
 
 }
 
-<<<<<<< HEAD
-  <a href="${link}><img src="${direccion}"</a>
-  
-  `;
-});*/
+  <a href="${link}"><img src="${direccion}"/></a>
+
 //PODRIA FUNCIONAR
 // document.querySelector("checkbox").addEventListener("change",function(){
 
@@ -192,8 +174,6 @@ function hazTuSeleccion(checkboxValue)
   //"direccion","cancion","link"]
 //let arrayFavoritosString= JSON.stringify(arrayFavoritos)
 //localStorage.SetItem("arrayDeFavoritos",arrayFavoritosString)
-=======
->>>>>>> 52ebb284b2ad6f589ffcbdb2fec3c3036c1dc823
 window.onload = function () {
     change(1);
 };
