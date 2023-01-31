@@ -156,35 +156,6 @@ function variasfotos(nuestras) {
 
 }
 
-<<<<<<< HEAD
-  <a href="${link}><img src="${direccion}"</a>
-  
-  `;
-});*/
-//PODRIA FUNCIONAR
-// document.querySelector("checkbox").addEventListener("change",function(){
-
-//   let seleccion = checkboxValue.split(" | ");
-
-//   let direccion = seleccion[0];
-//   let cancion = seleccion[1];
-//   let link = seleccion[2];
-//   document.querySelector("Pepe").innerHTML +=`
-//   <h4>${cancion}</h4>
-
-//   <a href="${link}"><img src="${direccion}" /></a>
-//   <button>Añadir a favoritos</button>
-//   `;
-  
-// });
-//-----------------------------
-function hazTuSeleccion(checkboxValue) 
-//let arrayFavoritos=[
-  //"direccion","cancion","link"]
-//let arrayFavoritosString= JSON.stringify(arrayFavoritos)
-//localStorage.SetItem("arrayDeFavoritos",arrayFavoritosString)
-=======
->>>>>>> 52ebb284b2ad6f589ffcbdb2fec3c3036c1dc823
 window.onload = function () {
     change(1);
 };
@@ -207,3 +178,4 @@ function change() {
     </ul>`;
     }
 }
+*/
