@@ -38,20 +38,39 @@
   #etiqBus {
     width: 30%;
   }
+
   #fotos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: rgb(146, 41, 41);
+    min-height: 200px;
+    border-color: black;
+    margin-top: 1vh;
   }
   .todas {
-    width: 200px;
+    max-width: 200px;
+
     margin: 1vh;
+    image-resolution: unset;
   }
+  a:hover {
+    transition: 2s;
+    image-resolution: initial;
+  }
+
   h2 {
     color: wheat;
     font-family: "Pacifico", cursive;
     font-weight: 200;
     font-weight: 200;
+  }
+  h4{
+    color: brown;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    
   }
   span {
     color: rgb(4, 4, 90);
@@ -89,12 +108,28 @@
   .dos {
     border-style: double;
   }
-  #Elige{
+  #Elige {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
-  #seleccion{
-    width: 30%;
+  .checkbox{
+    max-width: 100px;
+  }
+  #seleccion {
+    width: 20%;
+    background-color: rgb(92, 30, 30);
+    margin: 1vh;
+    border-color: black;
+  }
+  .selected-data{
+
+border-color: black;
+border-style: groove;
+  }
+  p{
+    font-size: x-small;
+    color: white;
   }
 }
 @media (min-width: 501px) {
