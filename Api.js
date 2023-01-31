@@ -100,12 +100,21 @@ function datosArtista(peticionAYoutube) {
         .catch((err) => console.error(err));
 
 }
+<<<<<<< HEAD
 
 // document.querySelector("select").addEventListener("change", function () {
 //   let data = this.value.split(" | ");
 //   let direccion = data[0];
 //   let cancion = data[1];
 //   let link = data[2];
+=======
+/*
+document.querySelector("select").addEventListener("change", function () {
+  let data = this.value.split(" | ");
+  let direccion = data[0];
+  let cancion = data[1];
+  let link = data[2];
+>>>>>>> dev
 
 //   document.querySelector("#Pepe").innerHTML = "";
 //   document.querySelector("#Pepe").innerHTML += `
@@ -156,6 +165,35 @@ function variasfotos(nuestras) {
 
 }
 
+<<<<<<< HEAD
+=======
+  <a href="${link}><img src="${direccion}"</a>
+  
+  `;
+});*/
+//PODRIA FUNCIONAR
+// document.querySelector("checkbox").addEventListener("change",function(){
+
+//   let seleccion = checkboxValue.split(" | ");
+
+//   let direccion = seleccion[0];
+//   let cancion = seleccion[1];
+//   let link = seleccion[2];
+//   document.querySelector("Pepe").innerHTML +=`
+//   <h4>${cancion}</h4>
+
+//   <a href="${link}"><img src="${direccion}" /></a>
+//   <button>Añadir a favoritos</button>
+//   `;
+  
+// });
+//-----------------------------
+function hazTuSeleccion(checkboxValue) 
+//let arrayFavoritos=[
+  //"direccion","cancion","link"]
+//let arrayFavoritosString= JSON.stringify(arrayFavoritos)
+//localStorage.SetItem("arrayDeFavoritos",arrayFavoritosString)
+>>>>>>> dev
 window.onload = function () {
     change(1);
 };
