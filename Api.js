@@ -51,11 +51,10 @@ function datosArtista(peticionAYoutube) {
                 let data = check.value.split(" | ")
 
                 check.addEventListener("change", () => {
-                    
                     document.querySelector("#Pepe").innerHTML += `
                         <div class="selected-data">
                             <h4>${data[1]}</h4>
-                            <a href="${data[2]}"><img class="todas"src="${data[0]}" /></a>
+                            <a href="${data[2]}"><img src="${data[0]}" /></a>
                             <button id="btn${check.id}" class="checkboxBtn">Añadir a favoritos</button>
                         </div>
                     `;
@@ -67,27 +66,16 @@ function datosArtista(peticionAYoutube) {
                             localArray = localStorage.getItem("localArray")
                             localArray = JSON.parse(localArray)
                         }
-
+    
                         localArray.push({ title: data[1], img: data[2], videoUrl: data[0] })
-
+                        
                         localArray = JSON.stringify(localArray)
                         localStorage.setItem("localArray", localArray)
-
-<<<<<<< HEAD
-                        showLocalStorage()
                     
-=======
->>>>>>> origin/dev
                     })
                 })
             })
 
-<<<<<<< HEAD
-            
-=======
-            document.querySelector("#Limpiar").addEventListener("click", function () {
-                localStorage.clear()
-            })
             // let checkBtn = document.querySelectorAll(".checkboxBtn")
             // console.log(checkBtn);
 
@@ -101,20 +89,23 @@ function datosArtista(peticionAYoutube) {
             //         }
 
             //         localArray.push({ title: response.items[index].title, img: response.items[index].thumbnails[0].url, videoUrl: response.items[index].url })
-
+                    
             //         localArray = JSON.stringify(localArray)
             //         localStorage.setItem("localArray", localArray)
-
+                
             //     })
             // })
->>>>>>> origin/dev
 
         })
         .catch((err) => console.error(err));
 
 }
-<<<<<<< HEAD
-=======
+/*
+document.querySelector("select").addEventListener("change", function () {
+  let data = this.value.split(" | ");
+  let direccion = data[0];
+  let cancion = data[1];
+  let link = data[2];
 
 //   document.querySelector("#Pepe").innerHTML = "";
 //   document.querySelector("#Pepe").innerHTML += `
@@ -124,9 +115,8 @@ function datosArtista(peticionAYoutube) {
 
 //   `;
 // });
->>>>>>> origin/dev
 
-if (document.querySelector("#Trending")) {
+if (document.querySelector("button")) {
     document.querySelector("button").addEventListener("click", function () {
         variasfotos()
     })
@@ -156,18 +146,45 @@ function variasfotos(nuestras) {
         videobuscada: "https://www.youtube.com/watch?v=kIVjysOGCQs"
     }]
 
-    
-        document.querySelector("#fotos").innerHTML += `
-            <div>
+
+    document.querySelector("#fotos").innerHTML += `
+            <div class="todas">
             <h5>${nuestraLista[numero].TipoMusica}</h5>
-            <a href="${nuestraLista[numero].videobuscada}"><img  class="todas" src="${nuestraLista[numero].ImagenFoto}"</a>
+            <a href="${nuestraLista[numero].videobuscada}"><img class="todas" src="${nuestraLista[numero].ImagenFoto}"</a>
             </div>
             `
 
-    }
+}
 
 <<<<<<< HEAD
+  <a href="${link}><img src="${direccion}"</a>
+  
+  `;
+});*/
+//PODRIA FUNCIONAR
+// document.querySelector("checkbox").addEventListener("change",function(){
 
+//   let seleccion = checkboxValue.split(" | ");
+
+//   let direccion = seleccion[0];
+//   let cancion = seleccion[1];
+//   let link = seleccion[2];
+//   document.querySelector("Pepe").innerHTML +=`
+//   <h4>${cancion}</h4>
+
+//   <a href="${link}"><img src="${direccion}" /></a>
+//   <button>Añadir a favoritos</button>
+//   `;
+  
+// });
+//-----------------------------
+function hazTuSeleccion(checkboxValue) 
+//let arrayFavoritos=[
+  //"direccion","cancion","link"]
+//let arrayFavoritosString= JSON.stringify(arrayFavoritos)
+//localStorage.SetItem("arrayDeFavoritos",arrayFavoritosString)
+=======
+>>>>>>> 52ebb284b2ad6f589ffcbdb2fec3c3036c1dc823
 window.onload = function () {
     change(1);
 };
@@ -178,71 +195,15 @@ function change() {
     console.log(pagina);
     if (pagina === "1") {
         document.querySelector("#page").innerHTML = `
-=======
-    window.onload = function () {
-        change(1);
-    };
-    function change() {
-        let pathname = window.location.pathname;
-        let paginaImprimible = "";
-        let pagina = pathname.substring(pathname.length - 6, pathname.length - 5);
-        console.log(pagina);
-        if (pagina === "1") {
-            document.querySelector("#page").innerHTML = `
->>>>>>> origin/dev
     <ul id="paginacion">
     <l1>1</li>
     <l1><a href="./Api2.html"><strong>2</stron></a></li>
     </ul>`;
-        } else {
-            document.querySelector("#page").innerHTML = `
+    } else {
+        document.querySelector("#page").innerHTML = `
     <ul id="paginacion">
     <l1><a href="./Api1.html"><strong>1</stron></a></li>
     <l1>2</li>
     </ul>`;
-        }
-    }
-<<<<<<< HEAD
-}
-
-function showLocalStorage(){
-    document.querySelector(".dos").innerHTML = "<h3>Tu historial</h3>"
-    let localStg = localStorage.getItem("localArray");
-
-    localStg = JSON.parse(localStg)
-
-    if(localStg !== null && localStg !== undefined){
-
-        for(let i = 0; i < localStg.length; i++){
-
-            document.querySelector(".dos").innerHTML += `
-            <div class="selected-data">
-                <h4>${localStg[i].title}</h4>
-                <a href="${localStg[i].img}"><img src="${localStg[i].videoUrl}" /></a>
-            </div>
-            `
-        }
     }
 }
-
-showLocalStorage()
-=======
-
-    function showLocalStorage(){
-        document.querySelector(".dos").innerHTML=`<h3> Tu historial</h3>`
-        let localStg= localStorage.getItem("localArray");
-        localStg=JSON.parse(localStg)
-        if(localStg!==null && localStg!==undefined){
-            for (let i = 0; i < localStg.length; i++) {
-                document.querySelector(".dos").innerHTML+=`
-                <div class="selected-data">
-                <h4>${localStg[i].title}</h4>
-                <a href="${localStg[i].img}"><img class="todas" src="${localStg[i].videoUrl}"/></a>
-                </div>`
-
-                
-            }
-        }
-    }
-    showLocalStorage()
->>>>>>> origin/dev
