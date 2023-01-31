@@ -90,6 +90,13 @@
   .dos {
     border-style: double;
   }
+  #Elige{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #seleccion{
+    width: 30%;
+  }
 }
 @media (min-width: 501px) {
   header {
