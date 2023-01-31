@@ -8,6 +8,7 @@
   h3 {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: "Pacifico", cursive;
     font-style: oblique;
   }
@@ -23,8 +24,7 @@
   }
   /* main {
     height: 80%; */
-    
-  }
+
   #busq {
     background-image: url("https://concepto.de/wp-content/uploads/2020/03/musica-e1584123203510-800x400.jpg");
     background-size: cover;
@@ -35,48 +35,241 @@
     flex-direction: column;
     height: 200px;
   }
-  #etiqBus{
-    width: 20%;
+  #etiqBus {
+    width: 30%;
   }
-  #fotos{
+  #fotos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
-  .todas{
-    width:200px;
+  .todas {
+    width: 200px;
     margin: 1vh;
   }
   h2 {
     color: wheat;
-    font-family: "Pacifico", cursive ;
+    font-family: "Pacifico", cursive;
     font-weight: 200;
     font-weight: 200;
   }
-span{
-    color: rgb(117, 18, 18);
-}
-#paginacion{
-display: flex;
-margin: 1vh;
-}
-#peticionehistorial{
+  span {
+    color: rgb(4, 4, 90);
+    font-size: 30px;
+  }
+  #paginacion {
     display: flex;
-
-}
-.tabla{
     margin: 1vh;
-background-color: white;
+  }
+  #peticionehistorial {
+    display: flex;
+    background-color: brown;
+  }
+  .tabla {
+    margin: 1vh;
+    background-color: white;
 
-border-color: black;
-width: 100%;
-min-height: 300px;
-}
-.uno{
-    border-style: dotted;
-}
-.dos{
+    border-color: rgb(19, 18, 18);
+    width: 100%;
+    min-height: 300px;
+    background-color: bisque;
+  }
+  #Pepe {
+    margin: 1vh;
+    background-color: white;
+
+    border-color: black;
+    width: 100%;
+    min-height: 300px;
+    background-color: bisque;
+  }
+  .uno {
     border-style: double;
+  }
+  .dos {
+    border-style: double;
+  }
 }
+@media (min-width: 501px) {
+  header {
+    background-color: rgb(27, 4, 4);
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Pacifico", cursive;
+    font-style: oblique;
+    font-size: 28px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    margin: 2vh;
+    padding: 1vh;
+    border-color: rgb(104, 36, 36);
+    border-style: dashed;
+    background-color: rgb(119, 119, 18);
+  }
+  /* main {
+    height: 80%; */
 
-@media (max-width: 1024px) {
+  #busq {
+    background-image: url("https://concepto.de/wp-content/uploads/2020/03/musica-e1584123203510-800x400.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+  }
+  #etiqBus {
+    width: 30%;
+  }
+  #fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .todas {
+    width: 200px;
+    margin: 1vh;
+  }
+  h2 {
+    color: wheat;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 35px;
+  }
+  span {
+    color: rgb(117, 18, 18);
+  }
+  #paginacion {
+    display: flex;
+    margin: 1vh;
+  }
+  #peticionehistorial {
+    display: flex;
+    background-color: rgb(1, 1, 13);
+  }
+  .tabla {
+    margin: 1vh;
+    background-color: rgb(169, 169, 240);
+
+    border-color: black;
+    width: 100%;
+    min-height: 300px;
+  }
+  #Pepe {
+    margin: 1vh;
+    background-color: rgb(169, 169, 240);
+
+    border-color: black;
+    width: 100%;
+    min-height: 300px;
+  }
+  .uno {
+    border-style: double;
+  }
+  .dos {
+    border-style: double;
+  }
+}
+@media (min-width: 800px) {
+  header {
+    background-color: rgb(27, 4, 4);
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Pacifico", cursive;
+    font-style: oblique;
+    font-size: 32px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    margin: 2vh;
+    padding: 1vh;
+    border-color: rgb(104, 36, 36);
+    border-style: dashed;
+    background-color: rgb(119, 119, 18);
+  }
+  /* main {
+    height: 80%; */
+
+  #busq {
+    background-image: url("https://concepto.de/wp-content/uploads/2020/03/musica-e1584123203510-800x400.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+  }
+  #etiqBus {
+    width: 30%;
+  }
+  #fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .todas {
+    width: 200px;
+    margin: 1vh;
+  }
+  h2 {
+    color: rgb(244, 191, 127);
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 40px;
+  }
+  span {
+    color: rgb(114, 4, 4);
+  }
+  #paginacion {
+    display: flex;
+    margin: 1vh;
+  }
+  #peticionehistorial {
+    display: flex;
+    background-color: rgb(1, 1, 13);
+    font-size: 50px;
+  }
+  .tabla {
+    margin: 1vh;
+    background-color: rgb(169, 169, 240);
+
+    border-color: black;
+    width: 100%;
+    min-height: 300px;
+  }
+  #Pepe {
+    margin: 1vh;
+    background-color: rgb(169, 169, 240);
+
+    border-color: black;
+    width: 100%;
+    min-height: 300px;
+  }
+  .uno {
+    border-style: double;
+  }
+  .dos {
+    border-style: double;
+  }
 }
