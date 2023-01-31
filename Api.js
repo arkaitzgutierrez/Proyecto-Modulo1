@@ -100,21 +100,12 @@ function datosArtista(peticionAYoutube) {
         .catch((err) => console.error(err));
 
 }
-<<<<<<< HEAD
-
-// document.querySelector("select").addEventListener("change", function () {
-//   let data = this.value.split(" | ");
-//   let direccion = data[0];
-//   let cancion = data[1];
-//   let link = data[2];
-=======
 /*
 document.querySelector("select").addEventListener("change", function () {
   let data = this.value.split(" | ");
   let direccion = data[0];
   let cancion = data[1];
   let link = data[2];
->>>>>>> dev
 
 //   document.querySelector("#Pepe").innerHTML = "";
 //   document.querySelector("#Pepe").innerHTML += `
@@ -165,8 +156,6 @@ function variasfotos(nuestras) {
 
 }
 
-<<<<<<< HEAD
-=======
   <a href="${link}><img src="${direccion}"</a>
   
   `;
@@ -193,7 +182,6 @@ function hazTuSeleccion(checkboxValue)
   //"direccion","cancion","link"]
 //let arrayFavoritosString= JSON.stringify(arrayFavoritos)
 //localStorage.SetItem("arrayDeFavoritos",arrayFavoritosString)
->>>>>>> dev
 window.onload = function () {
     change(1);
 };
