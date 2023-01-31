@@ -51,6 +51,7 @@ function datosArtista(peticionAYoutube) {
                 let data = check.value.split(" | ")
 
                 check.addEventListener("change", () => {
+                    
                     document.querySelector("#Pepe").innerHTML += `
                         <div class="selected-data">
                             <h4>${data[1]}</h4>
@@ -71,50 +72,19 @@ function datosArtista(peticionAYoutube) {
                         
                         localArray = JSON.stringify(localArray)
                         localStorage.setItem("localArray", localArray)
+
+                        showLocalStorage()
                     
                     })
                 })
             })
 
-            // let checkBtn = document.querySelectorAll(".checkboxBtn")
-            // console.log(checkBtn);
-
-            // checkBtn.forEach((div, index) => {
-            //     div.addEventListener("click", () => {
-            //         console.log('hola');
-            //         let localArray = []
-            //         if (localStorage.getItem("localArray")) {
-            //             localArray = localStorage.getItem("localArray")
-            //             localArray = JSON.parse(localArray)
-            //         }
-
-            //         localArray.push({ title: response.items[index].title, img: response.items[index].thumbnails[0].url, videoUrl: response.items[index].url })
-                    
-            //         localArray = JSON.stringify(localArray)
-            //         localStorage.setItem("localArray", localArray)
-                
-            //     })
-            // })
+            
 
         })
         .catch((err) => console.error(err));
 
 }
-/*
-document.querySelector("select").addEventListener("change", function () {
-  let data = this.value.split(" | ");
-  let direccion = data[0];
-  let cancion = data[1];
-  let link = data[2];
-
-//   document.querySelector("#Pepe").innerHTML = "";
-//   document.querySelector("#Pepe").innerHTML += `
-//   <h4>${cancion}</h4>
-
-//   <a href= ${link}><img src="${direccion}"</a>
-
-//   `;
-// });
 
 if (document.querySelector("button")) {
     document.querySelector("button").addEventListener("click", function () {
@@ -156,32 +126,7 @@ function variasfotos(nuestras) {
 
 }
 
-  <a href="${link}><img src="${direccion}"</a>
-  
-  `;
-});*/
-//PODRIA FUNCIONAR
-// document.querySelector("checkbox").addEventListener("change",function(){
 
-//   let seleccion = checkboxValue.split(" | ");
-
-//   let direccion = seleccion[0];
-//   let cancion = seleccion[1];
-//   let link = seleccion[2];
-//   document.querySelector("Pepe").innerHTML +=`
-//   <h4>${cancion}</h4>
-
-//   <a href="${link}"><img src="${direccion}" /></a>
-//   <button>Añadir a favoritos</button>
-//   `;
-  
-// });
-//-----------------------------
-function hazTuSeleccion(checkboxValue) 
-//let arrayFavoritos=[
-  //"direccion","cancion","link"]
-//let arrayFavoritosString= JSON.stringify(arrayFavoritos)
-//localStorage.SetItem("arrayDeFavoritos",arrayFavoritosString)
 window.onload = function () {
     change(1);
 };
@@ -204,3 +149,25 @@ function change() {
     </ul>`;
     }
 }
+
+function showLocalStorage(){
+    document.querySelector(".dos").innerHTML = "<h3>Tu historial</h3>"
+    let localStg = localStorage.getItem("localArray");
+
+    localStg = JSON.parse(localStg)
+
+    if(localStg !== null && localStg !== undefined){
+
+        for(let i = 0; i < localStg.length; i++){
+
+            document.querySelector(".dos").innerHTML += `
+            <div class="selected-data">
+                <h4>${localStg[i].title}</h4>
+                <a href="${localStg[i].img}"><img src="${localStg[i].videoUrl}" /></a>
+            </div>
+            `
+        }
+    }
+}
+
+showLocalStorage()

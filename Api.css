@@ -82,7 +82,7 @@
     width: 100%;
     min-height: 300px;
     background-color: bisque;
-    display: flex;
+    /* display: flex; */
   }
   .uno {
     border-style: double;
@@ -181,7 +181,7 @@
     border-color: black;
     width: 100%;
     min-height: 300px;
-    display: flex;
+    
   }
   .uno {
     border-style: double;
@@ -227,6 +227,7 @@
     align-items: center;
     flex-direction: column;
     height: 200px;
+    width: 100%;
   }
   #etiqBus {
     width: 30%;
@@ -235,6 +236,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
+    border-color:black;
+    min-height: 300px;
+    margin-top: 1vh;
+    background-color: rgb(240, 169, 170);
+    width: 100%;
+    min-height: 300px;
+   
   }
   .todas {
     width: 200px;
@@ -256,7 +266,8 @@
   }
   #peticionehistorial {
     display: flex;
-    background-color: rgb(1, 1, 13);
+    background-color: rgb(13, 1, 4);
+  
     font-size: 50px;
   }
   .tabla {
@@ -274,12 +285,14 @@
     border-color: black;
     width: 100%;
     min-height: 300px;
-    display: flex;
+    
   }
   .uno {
     border-style: double;
+    max-width: 100%;
   }
   .dos {
     border-style: double;
+    max-width: 100%;
   }
 }
